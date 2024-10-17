@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form with Radio Buttons and Textarea</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(#3b589800); /* Gradient background */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Set Arial as the main font */
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            font-family: Arial, sans-serif; /* Set font to Arial */
+        }
+        /* CSS for the radio buttons */
+        .radio-label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+            color: #333;
+        }
+        .radio-container {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .radio-container label {
+            margin-right: 20px;
+        }
+        /* Textarea style */
+        .login-container textarea {
+            resize: none; /* Disable manual resize */
+            height: 100px; /* Default height for paragraph input */
+        }
+        .login-container button {
+            background-color: #007bff; /* Blue button */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .login-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .login-container a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>RSVP</h2>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdxIA-u9uGhHSc0At7KZPGFrJRnaEb5RsFRyVWnh67FrMlV7w/formResponse">
+            <input type="text" name="entry.1610722616" placeholder="Nama Lengkap" required>
+            <input type="text" name="entry.965329218" placeholder="No. Handphone" required>
+
+            <!-- Custom label above radio options -->
+            <label class="radio-label">Bersedia hadir di acara kami?</label>
+            
+            <!-- Radio Button Container -->
+            <div class="radio-container">
+                <label><input type="radio" id="entry.2128444139" name="entry.2128444139" value="haha" required> Haha</label>
+                <label><input type="radio" id="entry.2128444139" name="entry.2128444139" value="hihi" required> Hihi</label>
+            </div>
+
+            <!-- Textarea for long paragraph input -->
+            <textarea name="entry.1017564384" placeholder="Kirim ucapan dan doa untuk kedua mempelai..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
